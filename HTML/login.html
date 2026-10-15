@@ -1,47 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Login Page</title>
-
+    <title>Login - Tehnologii Web</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/login_style.css">
 </head>
-
 <body>
-
     <div class="login-container">
-
         <div class="login-image">
             <img src="../MEDIA/login.png" alt="Imagine login">
         </div>
 
         <div class="separator"></div>
 
-        <div class="login-form">
-
+        <form id="loginForm" class="login-form">
             <h2>Login</h2>
 
-            <input type="email" placeholder="Email">
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Email"
+                   required>
 
-            <input type="password" placeholder="Parola">
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Parola"
+                   required>
 
-            <button type="button">Login</button>
+            <button type="submit">Login</button>
 
-            
-<p class="register-text">
-    Nu ai cont?
-    <a href="register.html">Înregistrează-te</a>
-</p>
-
-
-        </div>
-
+            <p class="register-text">
+                Nu ai cont?
+                <a href="register.html">Înregistrează-te</a>
+            </p>
+        </form>
     </div>
 
+    <script src="../JS/login_js.js"></script>
 </body>
-
 </html>

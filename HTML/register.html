@@ -13,8 +13,8 @@
             <h1>Creează un cont</h1>
             <p class="subtitle">Alătură-te comunității noastre!</p>
 
-            <form class="register-form" action="#" method="post"
-                  enctype="multipart/form-data">
+            <form class="register-form" action="#"
+                  onsubmit="event.preventDefault(); alert('Formular completat cu succes!');">
 
                 <div class="row">
                     <label for="username">Nume utilizator</label>
@@ -49,12 +49,18 @@
                 <div class="row">
                     <label>Gen</label>
                     <div class="checkbox-grid">
-                        <label><input type="radio" name="gender"
-                                      value="male"> Masculin</label>
-                        <label><input type="radio" name="gender"
-                                      value="female"> Feminin</label>
-                        <label><input type="radio" name="gender"
-                                      value="other"> Altul</label>
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            Masculin
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Feminin
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="other">
+                            Altul
+                        </label>
                     </div>
                 </div>
 
@@ -73,14 +79,26 @@
                 <div class="row">
                     <label>Interese și hobby-uri</label>
                     <div class="checkbox-grid">
-                        <label><input type="checkbox" name="hobbies"
-                                      value="programming"> Programare</label>
-                        <label><input type="checkbox" name="hobbies"
-                                      value="gaming"> Gaming</label>
-                        <label><input type="checkbox" name="hobbies"
-                                      value="music"> Muzică</label>
-                        <label><input type="checkbox" name="hobbies"
-                                      value="sports"> Sport</label>
+                        <label>
+                            <input type="checkbox" name="hobbies"
+                                   value="programming">
+                            Programare
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobbies"
+                                   value="gaming">
+                            Gaming
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobbies"
+                                   value="music">
+                            Muzică
+                        </label>
+                        <label>
+                            <input type="checkbox" name="hobbies"
+                                   value="sports">
+                            Sport
+                        </label>
                     </div>
                 </div>
 
