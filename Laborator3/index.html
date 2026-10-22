@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator 3 - Tehnologii Web</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Laborator 3 - Tehnologii Web</h1>
+        <p>CSS Selectors, Box Model, Flexbox, Grid și Responsive Design</p>
+    </header>
+
+    <main>
+        <section class="exercise">
+            <h2>Exercițiul 1 - CSS Selectors</h2>
+            <p class="description">
+                Două reguli CSS cu aceeași specificitate.
+                Ultima declarație de culoare are prioritate.
+            </p>
+            <p class="important">An important paragraph</p>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercițiul 2 - CSS Box Model</h2>
+            <p class="description">
+                Ambele carduri au width: 300px, padding: 20px
+                și border: 5px.
+            </p>
+
+            <div class="card-a">
+                Card A - content-box
+            </div>
+
+            <div class="card-b">
+                Card B - border-box
+            </div>
+
+            <p class="result">
+                Card A: 300 + 40 + 10 = 350px
+            </p>
+            <p class="result">
+                Card B: lățimea totală este 300px.
+            </p>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercițiul 3 - Flexbox Navigation</h2>
+            <p class="description">
+                Bară de navigare realizată cu Flexbox.
+            </p>
+
+            <nav class="flex-navbar" aria-label="Navigare demonstrativă">
+                <span class="brand">WebLab</span>
+                <div class="nav-links">
+                    <a href="#ex4">Galerie</a>
+                    <a href="#ex5">Layout</a>
+                    <a href="bootstrap-gallery.html">Bootstrap</a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="exercise" id="ex4">
+            <h2>Exercițiul 4 - CSS Grid Gallery</h2>
+            <p class="description">
+                Galerie cu șase carduri, organizate automat
+                în funcție de lățimea ecranului.
+            </p>
+
+            <div class="gallery">
+                <article class="gallery-card">
+                    <h3>HTML</h3>
+                    <p>Structura paginilor web.</p>
+                </article>
+
+                <article class="gallery-card">
+                    <h3>CSS</h3>
+                    <p>Stilizarea elementelor HTML.</p>
+                </article>
+
+                <article class="gallery-card">
+                    <h3>JavaScript</h3>
+                    <p>Interactivitate în browser.</p>
+                </article>
+
+                <article class="gallery-card">
+                    <h3>Flexbox</h3>
+                    <p>Alinierea flexibilă a elementelor.</p>
+                </article>
+
+                <article class="gallery-card">
+                    <h3>CSS Grid</h3>
+                    <p>Organizarea conținutului în grile.</p>
+                </article>
+
+                <article class="gallery-card">
+                    <h3>Bootstrap</h3>
+                    <p>Framework CSS pentru interfețe responsive.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="exercise" id="ex5">
+            <h2>Exercițiul 5 - Responsive Layout</h2>
+            <p class="description">
+                Layout cu sidebar și conținut principal.
+                Pe ecrane mici, elementele apar unul sub altul.
+            </p>
+
+            <div class="layout">
+                <aside class="sidebar">
+                    <h3>Sidebar</h3>
+                    <nav aria-label="Navigare laterală">
+                        <a href="#ex4">CSS Grid</a>
+                        <a href="#ex5">Responsive Design</a>
+                        <a href="bootstrap-gallery.html">
+                            Bootstrap Gallery
+                        </a>
+                    </nav>
+                </aside>
+
+                <article class="main-content">
+                    <h3>Conținut principal</h3>
+                    <p>
+                        Această secțiune demonstrează
+                        un layout responsive realizat
+                        cu CSS Grid.
+                    </p>
+                    <p>
+                        Pe ecrane cu lățimea sub 768px,
+                        sidebar-ul și conținutul principal
+                        sunt afișate vertical.
+                    </p>
+                    <p>
+                        De la 768px, layout-ul folosește
+                        două coloane, cu proporția 1:2.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercițiul 6 - Bootstrap 5</h2>
+            <p class="description">
+                Galeria Bootstrap este implementată
+                într-o pagină separată.
+            </p>
+            <a class="button-link" href="bootstrap-gallery.html">
+                Deschide galeria Bootstrap
+            </a>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Laborator 3 - Tehnologii Web - 2026</p>
+    </footer>
+</body>
+</html>
